@@ -1,0 +1,31 @@
+site_name: Privacy Sleep System ドキュメント
+
+theme:
+  name: material
+  language: ja
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替え
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替え
+
+nav:
+  - Privacy Sleep System: index.md
+  - セットアップ: setup.md
+  - 各機能の説明/設定:
+      - 侵入防止コライダー: features/intrusion_blocker.md
+      - 覗き見防止オブジェクト: features/view_blocker.md
+      - 侵入時強制テレポート: features/intrusion_teleport.md
+      - 侵入時暗転視界ジャック: features/intrusion_blackout.md
+      - 双方向防音: features/mutual_soundproof.md
+      - パスワード: features/access_control.md
+  - 更新履歴: update.md
+  - 問い合わせ: contact.md
+  - 商品ページ(Booth): https://kogostore.booth.pm/items/8062290
+markdown_extensions:
+  - admonition
+  - pymdownx.details
