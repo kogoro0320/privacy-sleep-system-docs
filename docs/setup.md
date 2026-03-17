@@ -3,7 +3,6 @@
 本ギミックは、以下の環境で開発・動作確認を行っています。
 
 - Unity: 2022.3.22f1
-- VRChat SDK - Base: 3.10.2
 - VRChat SDK - Worlds: 3.10.2
 
 ## 1. unitypackageのインポート
