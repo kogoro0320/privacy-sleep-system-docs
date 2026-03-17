@@ -28,16 +28,16 @@
 
 ## 4. 睡眠エリア位置の調整
 
-PrivacySleepSystem 内にある <u>**SleepArea**</u> の Transform を、の下部が少し床にめり込むように調整してください。
+PrivacySleepSystem 内にある <u>**SleepArea**</u> の Transform を、下部が少し床にめり込むように調整してください。（位置ずれによる検出漏れ防止のため）
 
 ![設定画面](images/setup_04-01.png)
 ![設定画面](images/setup_04-02.png)
 
 !!! tip "推奨設定"
-    SleepArea 内にある各オブジェクトの Transform や Box Collider の範囲は個別に調整せず、できるだけ SleepArea の Transform を調整するようにしてください。
-    各機能ごとの指定範囲がずれてしまい、十分な機能提供ができなくなる可能性があります。
+    SleepArea 内にある各オブジェクトの Transform や Box Collider の範囲は個別に調整せず、できるだけ SleepArea の Transform のみを調整するようにしてください。
+    各機能ごとの指定範囲がずれてしまい、意図した動作をしなくなる可能性があります。
 
-カーテンは四方向に設定していますので、不要な方向がある場合は <u>**SleepArea > ViewBlockObjects > Cartain**</u> 内の各方向に応じたオブジェクトをInactiveにしてください。<br>
+カーテンは前後左右の4方向で別オブジェクトにしていますので、不要な方向がある場合は <u>**SleepArea > ViewBlockObjects > Cartain**</u> 内の各方向に応じたオブジェクトをInactiveにしてください。<br>
 Blackbox は上下方向からの視認防止の役割がありますので、Inactiveにはしないでください。
 
 ![設定画面](images/setup_04-03.png)
@@ -78,6 +78,16 @@ PrivacySleepSystem > UI内にある <u>**InsideUI と OutsideUI**</u> のTransfo
 
 !!! tip "推奨設定"
     InsideUI は SleepArea の範囲内への設置を推奨します。OutsideUI は SleepArea の範囲外に設置してください。
+
+## 8. ワールド音の設定
+
+PrivacySleepSystem > System内にある <u>**SoundproofManager**</u> のInspectorより、制御対象にしたいワールド音のAudio Sourceを設定してください。
+
+![設定画面](images/setup_08-01.png)
+
+!!! warning "注意"
+    制御対象に設定されていないワールド音は、Privacy Mode をONにしても通常通り聞こえます。<br>
+    制御対象となったワールド音の聞こえ方については、[双方向防音](features/mutual_soundproof.md) のページを確認してください。
 
 <br>
 以上でセットアップは完了です。<br>

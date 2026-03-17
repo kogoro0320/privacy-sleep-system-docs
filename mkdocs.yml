@@ -24,6 +24,7 @@ nav:
       - 双方向防音: features/mutual_soundproof.md
       - 侵入時強制テレポート: features/intrusion_teleport.md
       - 侵入時暗転視界ジャック: features/intrusion_blackout.md
+      - その他の設定: features/other.md
   - 更新履歴: update.md
   - 問い合わせ: contact.md
   - 商品ページ(Booth): https://kogostore.booth.pm/items/8062290

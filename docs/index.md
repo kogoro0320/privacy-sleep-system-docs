@@ -1,4 +1,4 @@
-<p align="center"><img src="images/index_01.png" alt="Setup" width="60%"></p>
+<p align="center"><img src="images/index_01.png" alt="Top" width="60%"></p>
 
 ## 導入方法
 [セットアップ](./setup.md) をご覧ください。
@@ -33,3 +33,5 @@ Privacy ModeをONにした時に、睡眠エリア内にいるプレイヤー（
     - 睡眠エリア内からの音（プレイヤー音声・アバター音・ワールド音）の防音
     - 睡眠エリア侵入時の視界暗転（プレイヤー視点・カメラ類）
     - 睡眠エリア侵入時の強制テレポート
+
+各機能の詳細について、メニューの各機能の説明/設定 よりご確認ください。
