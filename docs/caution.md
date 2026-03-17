@@ -1,3 +1,4 @@
+- [セットアップ](setup.md) で動作環境をご確認ください。
 - Desktop/PCVRのみをサポートしております。<br>
 Quest/Android/iOSでの動作確認はしておらず、サポート対象外となります。<br>
 Quest/Android/iOS環境では全てまたは一部の機能が正常に動作しない可能性が高く、Desktop/PCVR環境との動作差異が発生してしまう恐れがあるため、Quest/Android/iOSに対応しているワールドへの導入はお控えください。
@@ -7,9 +8,9 @@ Quest/Android/iOS環境では全てまたは一部の機能が正常に動作し
 他の防音ギミックなどとの併用はお控えください。
 - 一度ミュートにしたアバター音がミュート解除されない問題が発生する状況があることを確認しております。<br>
 この問題はVRChat側のバグに起因しているため、お問い合わせいただいても対応ができません。<br>
-[VRChat Feedbackでバグ報告済み](https://feedback.vrchat.com/bug-reports/p/vrcplayerapisetavataraudiofarradius-does-not-restore-avatar-audio-if-playback-st)ですので、Voteのご協力をお願いいたします。<br>
+[VRChat Feedbackでバグ報告済み](https://feedback.vrchat.com/bug-reports/p/vrcplayerapisetavataraudiofarradius-does-not-restore-avatar-audio-if-playback-st) ですので、Voteのご協力をお願いいたします。<br>
 - VRChat標準機能として提供されている以下の音については防音されません。<br>
-[VRChat Feedbackで機能要望済み](https://feedback.vrchat.com/feature-requests/p/allow-udon-to-control-the-volume-of-inventory-and-cosmetic-effects)ですので、Voteのご協力をお願いいたします。
+[VRChat Feedbackで機能要望済み](https://feedback.vrchat.com/feature-requests/p/allow-udon-to-control-the-volume-of-inventory-and-cosmetic-effects) ですので、Voteのご協力をお願いいたします。
     - テキストチャットの表示音
     - カメラのシャッター音
     - ドローンの飛行音

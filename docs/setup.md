@@ -17,32 +17,68 @@
 
 ## 3. 本体位置の調整
 
-配置した <u>**PrivacySleepSystem**</u> を選択し、Inspector より Transform の <u>**Position Y が 0**</u> となっていることを確認してください。
-
+配置した <u>**PrivacySleepSystem**</u> を選択し、Inspector より Transform の <u>**Position Y が 0**</u> となっていることを確認してください。<br>
 0 になっていない場合は、0 に設定してください。
+
+![設定画面](images/setup_03-01.png)
 
 !!! warning "注意"
     床の高さ(Y)が 0 の位置を想定していますので、床の高さが 0 ではない場合、床の高さに合わせて設定してください。
-    デフォルトでは、範囲( SleepArea )の下部が少し床にめり込むように設定しています。（位置ずれによる検出漏れ防止のため）
+    デフォルトでは、睡眠エリア( SleepArea )の下部が少し床にめり込むように調整しています。（位置ずれによる検出漏れ防止のため）
 
-## 4. 範囲位置の調整
+## 4. 睡眠エリア位置の調整
 
-PrivacySleepSystem 内にある <u>**SleepArea**</u> の Transform を、お好みに合わせて調整してください。
+PrivacySleepSystem 内にある <u>**SleepArea**</u> の Transform を、の下部が少し床にめり込むように調整してください。
+
+![設定画面](images/setup_04-01.png)
+![設定画面](images/setup_04-02.png)
 
 !!! tip "推奨設定"
     SleepArea 内にある各オブジェクトの Transform や Box Collider の範囲は個別に調整せず、できるだけ SleepArea の Transform を調整するようにしてください。
     各機能ごとの指定範囲がずれてしまい、十分な機能提供ができなくなる可能性があります。
 
+カーテンは四方向に設定していますので、不要な方向がある場合は <u>**SleepArea > ViewBlockObjects > Cartain**</u> 内の各方向に応じたオブジェクトをInactiveにしてください。<br>
+Blackbox は上下方向からの視認防止の役割がありますので、Inactiveにはしないでください。
+
+![設定画面](images/setup_04-03.png)
+
+調整が完了したら、SleepArea > ViewBlockObjects はInactiveにしても問題ありません。
+
 ## 5. テレポート位置の調整
 
 PrivacySleepSystem 内にある <u>**TeleportPoint**</u> のTransformを、お好みに合わせて調整してください。
 
+![設定画面](images/setup_05-01.png)
+
+!!! tip "推奨設定"
+    TeleportPoint にアタッチされた Parent Constraint コンポーネントの Sources に VRCWorld を設定することで、リスポーン位置と同じ位置に設定できます。
+
+    ![設定画面](images/setup_05-02.png)
+
 !!! warning "注意"
     無限テレポートや連続侵入となる可能性がありますので、SleepArea から離れた位置にしてください。
 
-## 6. UI位置の調整
+## 6. テレポート用暗転オーバーレイ位置の調整
+
+1. PrivacySleepSystem > UI内にある <u>**OverrayTeleportFade**</u> を Active にしてください。
+![設定画面](images/setup_06-01.png)
+
+2. <u>**OverrayTeleportFade**</u> のTransformを、SleepArea と TeleportPoint の両方が<u>**Box内に入るように**</u>調整してください。
+![設定画面](images/setup_06-02.png)
+
+3. 調整後、<u>**OverrayTeleportFade**</u> をInactiveに戻してください。
+![設定画面](images/setup_06-03.png)
+
+## 7. UI位置の調整
 
 PrivacySleepSystem > UI内にある <u>**InsideUI と OutsideUI**</u> のTransformを、お好みに合わせて調整してください。
 
+![設定画面](images/setup_07-01.png)
+![設定画面](images/setup_07-02.png)
+
 !!! tip "推奨設定"
     InsideUI は SleepArea の範囲内への設置を推奨します。OutsideUI は SleepArea の範囲外に設置してください。
+
+<br>
+以上でセットアップは完了です。<br>
+各機能の設定方法については、メニューより各機能ごとのページでご確認ください。
