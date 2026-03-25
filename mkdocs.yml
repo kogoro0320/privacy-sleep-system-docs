@@ -2,20 +2,20 @@ site_name: Privacy Sleep System ドキュメント
 
 theme:
   name: material
+  logo: images/logo.png
   language: ja
   palette:
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: ライトモードに切り替え
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: ダークモードに切り替え
+    scheme: slate
+  features:
+    - navigation.expand
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Privacy Sleep System: index.md
   - セットアップ: setup.md
+  - 使い方: howtouse.md
   - 注意事項: caution.md
   - 各機能の説明/設定:
       - 許可プレイヤー登録: features/access_control.md
