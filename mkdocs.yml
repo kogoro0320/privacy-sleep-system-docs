@@ -31,3 +31,8 @@ nav:
 markdown_extensions:
   - admonition
   - pymdownx.details
+
+extra:
+  generator: false
+
+copyright: Copyright © 2026 KogoStore
